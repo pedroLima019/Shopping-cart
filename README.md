@@ -34,6 +34,6 @@ src/
 
 ## 🎯 Desafios extras
 
-- [ ] Método para limpar o carrinho inteiro
-- [ ] Verificar se o produto já está no carrinho antes de adicionar
+- [x] Método para limpar o carrinho inteiro
+- [x] Verificar se o produto já está no carrinho antes de adicionar
 - [ ] Classe `Cupom` com desconto percentual aplicado no total
