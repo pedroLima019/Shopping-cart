@@ -6,7 +6,11 @@ public class Carrinho {
     private ArrayList<Produto> produtos = new ArrayList<>();
 
     public void addProduto(Produto produto) {
-        produtos.add(produto);
+        if (produtos.contains(produto)) {
+            System.out.println("Produto já existe no carrinho:  " + produto);
+        } else {
+            produtos.add(produto);
+        }
     }
 
     public void removeProduto(String nome) {
@@ -15,8 +19,13 @@ public class Carrinho {
 
     public void listarProdutos() {
         for (Produto produto : produtos) {
-            System.out.println(produto);
+            System.out.println("Listando produtos: " + produto);
         }
+    }
+
+    public void limparCarrinho() {
+        produtos.clear();
+        System.out.println("Carrinho limpo com sucesso ! ");
     }
 
     public double totalCompra() {
